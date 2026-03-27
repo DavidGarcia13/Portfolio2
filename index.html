@@ -1,505 +1,291 @@
 <!doctype html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Project</title>
-  <meta name="keywords" content="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.">
-  <meta name="description" content="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.">
-
-  <link rel="stylesheet" href="assets/fonts/flat-icon/flaticon.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>David Garcia | Analista ERP Protheus, Desenvolvedor ADVPL/TLPP e IA</title>
+  <meta name="description" content="Portfólio pessoal de David Garcia com foco em ERP Protheus, ADVPL/TLPP, integrações, automação e projetos corporativos reais.">
+  <meta name="keywords" content="David Garcia, Protheus, ADVPL, TLPP, portfólio, integrações, automação, workspace">
   <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/iconfont/material-icons.css">
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-<div id="content-wrapper">
-  <header class="header header--bg">
-    <div class="container">
-      <nav class="navbar">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span> 
-          </button>
-          <a class="navbar-brand" href="#">PLUGADOS DEV</a>
-        </div>
-        <div class="collapse navbar-collapse" id="myNavbar">
-          <ul class="nav navbar-nav">
-            <li><a href="#">HOME</a></li>
-            <li><a onclick="scrollToSection(this, 'about')">ABOUT</a></li>
-            <li><a onclick="scrollToSection(this, 'skill')">SKILL</a></li> 
-            <li><a onclick="scrollToSection(this, 'service')">SERVICES</a></li> 
-            <li><a onclick="scrollToSection(this, 'portfolio')">PORTFOLIO</a></li> 
-          </ul>
-        </div>
+  <header class="site-header">
+    <div class="container shell nav-shell">
+      <a class="brand" href="index.html">PLUGADOS DEV</a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Abrir navegação">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="site-nav" id="site-nav">
+        <a href="#about">Sobre</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experiência</a>
+        <a href="#projects">Projetos</a>
+        <a href="workspace/">Workspace</a>
+        <a class="nav-cta" href="https://wa.me/5564999478851?text=Ol%C3%A1,%20tudo%20bem%3F" target="_blank" rel="noopener noreferrer">Fale comigo</a>
       </nav>
-      <div class="header__content text-center">
-        <span class="header__content__block">HELLO</span>
-        <h1 class="header__content__title">I'M DAVID GARCIA</h1>
-        <ul class="header__content__sub-title">
-          <li>ERP PROTHEUS ANALYST<span class="padding">&#45;</span></li>
-          <li>ADVPL DEVELOPER <span class="padding">&#45;</span></li>
-          <li>DATA SCIENTIST</li>
-        </ul>
-        <a class="header__button" href="https://wa.me/5564999478851?text=Ol%C3%A1,%20tudo%20bem%3F" target="_blank">Talk to me</a>
-      </div>
-      <div class="social-icon pull-right">
-        <ul>
-          <li><a href="https://www.linkedin.com/in/david-garcia-931196a7/" target="_blank"><i><img class="social-icon icons" src="assets/images/linkedin.png"alt=""></i></a></li>
-          <li><a href="https://github.com/DavidGarcia13" target="_blank"><i><img class="social-icon icons" src="assets/images/github.png"alt=""></i></a></li>
-          <li><a href="http://lattes.cnpq.br/5984559438351379" target="_blank"><i><img class="social-icon icons" src="assets/images/lates.png"alt=""></i></a></li>
-        </ul>
-      </div>
     </div>
   </header>
 
-  <section class="about">
-    <div class="container about__container--narrow">
-      <div class="page-section">
-        <h2 class="page-section__title">ABOUT ME</h2>
-          <img class="page-section__title-style" src="assets/images/title-style.png" alt="">
-          <p class="page-section__paragraph">From farmer in the countryside to Senior ERP Protheus Analyst and Data Analyst. Dedication is what defines evolution. </p>
-          <div class="row gutters-80">
-            <div class="col-md-4">
-              <div class="about__image">
-                <img src="assets/images/about-me-image.jpg" alt="">
-              </div>
-            </div>
-            <div class="col-md-8 about__content">
-              <p class="about__description">I'm an IT professional with a degree in Systems Analysis and Development from IF Goiano, and further qualifications in Information Systems from FAVENI and currently finalizing my postgraduate studies in Database with Big Data at UFG. Besides my academic pursuits, I enjoy audiobooks, crafts, and have a passion for computing. I'm also a big fan of Naruto, Harry Potter, and Game of Thrones.</p>
-              <div class="row row--margin-top">
-                <div class="col-md-4">
-                  <p class="about__bio"><strong>NAME :</strong> David R. Garcia</p>
-                  <p class="about__bio"><strong>AGE :</strong> 29</p>
-                </div>
-                <div class="col-md-4">
-                  <p class="about__bio"><strong>JOB TITLE :</strong> ADVPL DEVELOPER</p>
-                  <p class="about__bio"><strong>LOCATION :</strong> GOIANIA-GO,BRAZIL</p>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-md-4">
-                  <a class="button button--colorful button--margin" onclick="downloadPDF()" >DOWNLOAD CV</a>
-                </div>
-              </div>
-            </div>
-          </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="skill skill--bg">
-    <div class="container skill__container--narrow">
-      <div class="row justify-content-center table-responsive">
-        <div class="card">
-          <div class="card-header">
-            <h5 class="page-section__title">Skills e Soft Skills</h5>
-            <img class="page-section__title-style" src="assets/images/title-style.png" alt="">
-          </div>
-          <div class="card-body scroll-box table-responsive">
-          <div class="table-responsive">
-            <table class="table table-responsive table-bordered">
-              <thead>
-                <tr>
-                  <th>Categoria</th>
-                  <th>Skills</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>
-                    <h6>DESENVOLVIMENTO</h6>
-                  </td>
-                  <td>
-                    <ol>
-                      <li>Lógica de Programação (Avançado)</li>
-                      <li>Java (Básico)</li>
-                      <li>C (Básico)</li>
-                      <li>ADVPL (Avançado)</li>
-                      <li>HTML (Intermediário)</li>
-                      <li>CSS (Intermediário)</li>
-                      <li>JavaScript (Intermediário)</li>
-                      <li>Python (Básico)</li>
-                      <li>PL/SQL (Avançado)</li>
-                      <li>SQL (Avançado)</li>
-                      <li>PowerShell (Básico)</li>
-                    </ol>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <h6>Administração de Banco de Dados</h6>
-                  </td>
-                  <td>
-                    <ol>
-                      <li>Oracle (Avançado)</li>
-                      <li>SQL Server (Intermediário)</li>
-                    </ol>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <h6>WEB SERVICES</h6>
-                  </td>
-                  <td>
-                    <ol>
-                      <li>REST (Avançado)</li>
-                      <li>SOAP (Avançado)</li>
-                    </ol>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <h6>Gestão de Projetos</h6>
-                  </td>
-                  <td>
-                    <ol>
-                      <li>Scrum</li>
-                      <li>Kanban</li>
-                      <li>Cascata</li>
-                    </ol>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <h6>Versionamento de Códigos Fonte</h6>
-                  </td>
-                  <td>
-                    <ol>
-                      <li>GIT</li>
-                      <li>SVN</li>
-                      <li>Bitbucket</li>
-                      <li>GitHub</li>
-                      <li>GitLab</li>
-                    </ol>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <h6>IDE</h6>
-                  </td>
-                  <td>
-                    <ol>
-                      <li>VSCode</li>
-                      <li>Eclipse</li>
-                    </ol>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <h6>Levantamentos de Requisitos e Definição de Processos</h6>
-                  </td>
-                  <td>
-                    <ol>
-                      <li>Regras de Negócios</li>
-                      <li>Checklist</li>
-                      <li>Fluxogramas</li>
-                      <li>Modelagem BPMN</li>
-                    </ol>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <h6>Infraestrutura</h6>
-                  </td>
-                  <td>
-                    <ol>
-                      <li>Manutenção de computadores</li>
-                      <li>Cabeamento estruturado</li>
-                      <li>Gerenciamento de Servidores (Windows Server, Linux)</li>
-                      <li>Active Directory</li>
-                      <li>Regras de Firewall</li>
-                      <li>Agendamentos de tarefas</li>
-                      <li>Rotinas de Backup</li>
-                    </ol>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <h6>ERP Protheus</h6>
-                  </td>
-                  <td>
-                    <ol>
-                      <li>Infraestrutura (Binários, LIB, DBACESS, TSS, RPO, License Server)</li>
-                      <li>Módulos (Backoffice Completo, SIGAGFE, SIGAAGR, SIGACFG, APSDU)</li>
-                    </ol>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-            </div>
-            <table class="table table-responsive table-bordered">
-              <thead>
-                <tr>
-                  <th>Categoria</th>
-                  <th>Soft Skills</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>
-                    <h4>Comunicação Verbal e Gestual</h4>
-                  </td>
-                  <td>
-                      <p>Mantenho uma boa comunicação com a equipe/liderança e aplico técnicas de análise comportamental para uma comunicação estratégica com o cliente.</p>
-                  </td>
-                </tr>
-                <tr>
-                  <tr>
-                    <td>
-                      <h4>Colaboração</h4>
-                    </td>
-                    <td>
-                        <p>Trabalho bem em equipe e estou sempre disposto a ajudar.</p>  
-                    </td>
-                  </tr>
-                  <tr>
-                    <tr>
-                      <tr>
-                        <td>
-                          <h4>Flexibilidade</h4>
-                        </td>
-                        <td>
-                            <p>Me adapto com facilidade às mudanças de cenários, troca de projetos, prazos e horários.</p>
-                        </td>
-                      </tr>
-                    <tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
-    </div>
-  </section>
-
-  <section class="service">
-    <div class="container">
-      <div class="page-section">
-        <h2 class="page-section__title">MY SERVICES</h2>
-        <img class="page-section__title-style" src="assets/images/title-style.png" alt="">
-        <h3 class="page-section__Card">ERP Protheus</h3>
-        <div class="row gutters-70">
-          <div class="col-md-4">
-            <div class="thumbnail text-center">
-              <img src="assets/images/logo-design.png" alt="">
-              <h4 class="service__single-section__title">Developments</h4>
-              <p class="service__single-section__paragraph">With expertise in the latest ADVPL/TLPP language technologies, I develop and provide support for advanced reports, entry points, and screens with specific routines, meeting the unique needs of each project.</p>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="thumbnail text-center">
-              <img src="assets/images/website-design.png" alt="">
-              <h4 class="service__single-section__title">Updates</h4>
-              <p class="service__single-section__paragraph">With over 5 years of experience, I perform comprehensive updates across all technologies related to the Protheus ERP, including major updates such as release upgrades and dictionary migration to the database.</p>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="thumbnail text-center">
-              <img src="assets/images/support.png" alt="">
-              <h4 class="service__single-section__title">Support</h4>
-              <p class="service__single-section__paragraph">I analyze processes and data to optimize results within the ERP, correcting potential flaws and bugs.</p>
-            </div>
-          </div>
-        </div>
-        <h3 class="page-section__Card">Database and Data Analysis</h3>
-        <div class="row gutters-70">
-          <div class="col-md-4">
-            <div class="thumbnail text-center">
-              <img src="assets/images/logo-design.png" alt="">
-              <h4 class="service__single-section__title">DBA ORACLE\SQL SERVER</h4>
-              <p class="service__single-section__paragraph">Modeling and creating complex databases, creating procedures, functions, triggers, data auditing, performance analysis, backup and restoration routines, index and statistics creation, shrink operations, tablespace allocation, process debugging, and user administration.</p>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="thumbnail text-center">
-              <img src="assets/images/website-design.png" alt="">
-              <h4 class="service__single-section__title">Database Integration\Migration</h4>
-              <p class="service__single-section__paragraph">With specialized training, I perform data migrations of any scale between different databases, ensuring proper handling and integrity of information.</p>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="thumbnail text-center">
-              <img src="assets/images/support.png" alt="">
-              <h4 class="service__single-section__title">Data presentation</h4>
-              <p class="service__single-section__paragraph">I handle data processing and prepare presentations using either the Python language or Microsoft's Power BI tool.</p>
-            </div>
+  <main>
+    <section class="hero hero--bg">
+      <div class="container shell hero-grid hero-grid--single">
+        <div class="hero-copy">
+          <span class="hero__content__block">OLÁ</span>
+          <h1 class="hero__content__title">EU SOU DAVID GARCIA</h1>
+          <ul class="hero__content__sub-title">
+            <li>ANALISTA ERP PROTHEUS <span class="padding">-</span></li>
+            <li>DESENVOLVEDOR ADVPL/TLPP <span class="padding">-</span></li>
+            <li>DESENVOLVEDOR IA <span class="padding">-</span></li>
+            <li>CIENTISTA DE DADOS</li>
+          </ul>
+          <p class="hero-text">Desenvolvendo soluções corporativas há anos com conhecimento aprofundado em ERP Protheus, bancos de dados e desenvolvimento orientado por IA, proprietário da Plugados Dev e do produto <a class="hero-inline-link" href="https://plugentregas.com.br" target="_blank" rel="noopener noreferrer">PLUG - Sistema de Logística de Entregas</a>.</p>
+          <div class="hero-actions">
+            <a class="button button--colorful" href="workspace/">Ver Projetos</a>
+            <a class="button button--ghost" href="https://wa.me/5564999478851?text=Ol%C3%A1,%20tudo%20bem%3F" target="_blank" rel="noopener noreferrer">Fale comigo</a>
           </div>
         </div>
       </div>
-    </div>
-  </section>
-
-  <section class="overview overview--bg">
-    <div class="container">
-      <div class="page-section">
-        <div class="row gutters-140">
-        <div class="col-xs-6 col-lg-3 overview__single-section">
-          <i class="material-icons">headset_mic</i>
-          <h2 class="overview__single-section__number">6</h2>
-          <p class="overview__single-section__title">Years of experience</p>
-        </div>
-        <div class="col-xs-6 col-lg-3 overview__single-section">
-          <i class="material-icons">mood</i>
-          <h2 class="overview__single-section__number">50</h2>
-          <p class="overview__single-section__title">Happy Client</p>
-        </div>
-        <div class="col-xs-6 col-lg-3 overview__single-section">
-          <i class="material-icons">assignment_turned_in</i>
-          <h2 class="overview__single-section__number">100</h2>
-          <p class="overview__single-section__title">Finished Project</p>
-        </div>
-        <div class="col-xs-6 col-lg-3 overview__single-section">
-          <i class="material-icons">book</i>
-          <h2 class="overview__single-section__number">2</h2>
-          <p class="overview__single-section__title">articles published</p>
-        </div>
-      </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="portfolio">
-    <div class="container">
-      <div class="page-section">
-        <h2 class="page-section__title">MY PORTFOLIO</h2>
-        <img class="page-section__title-style" src="assets/images/title-style.png" alt="">
-        <p class="page-section__paragraph">Section under development</p>
-        <div class="portfolio__button-group">
-          <a class="button button--default" data-filter=".category-a" href="#">DEVELOPMENT</a>
-          <a class="button button--default" data-filter=".category-b" href="#">DESIGN</a>
-          <a class="button button--default" data-filter=".category-c" href="#">MACHINE LANGUAGE MODELS</a>
-          <a class="button button--default" data-filter=".category-d" href="#">DATABASE PACKAGES</a>
-        </div>
-        <!--
-        <div class="row gutters-40">
-          <div class="col-md-4">
-            <div class="portfolio__single-section mix category-a category-b category-c" data-order="1">
-              <img class="portfolio__single-section__image img-responsive" src="assets/images/portfolio-1.png" alt="">
-              <div class="portfolio__single-section__overlay">
-                <div class="overlay-content">
-                  <h4>LOGO DESIGN</h4>
-                  <p>Designer</p>
-                </div>
-                <div class="portfolio__single-section__search-icon">
-                  <a href="#"><img src="assets/images/search-icon.png" alt=""></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="portfolio__single-section mix category-a category-c" data-order="2">
-              <img class="portfolio__single-section__image img-responsive" src="assets/images/portfolio-2.png" alt="">
-              <div class="portfolio__single-section__overlay">
-                <div class="overlay-content">
-                  <h4>WEBSITE DESIGN</h4>
-                  <p>Designer</p>
-                </div>
-                <div class="portfolio__single-section__search-icon">
-                  <a href="#"><img src="assets/images/search-icon.png" alt=""></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="portfolio__single-section mix category-c" data-order="3">
-              <img class="portfolio__single-section__image img-responsive" src="assets/images/portfolio-3.png" alt="">
-              <div class="portfolio__single-section__overlay">
-                <div class="overlay-content">
-                  <h4>LOGO DESIGN</h4>
-                  <p>Designer</p>
-                </div>
-                <div class="portfolio__single-section__search-icon">
-                  <a href="#"><img src="assets/images/search-icon.png" alt=""></a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="row gutters-40">
-          <div class="col-md-4">
-            <div class="portfolio__single-section mix category-b category-d" data-order="4">
-              <img class="portfolio__single-section__image img-responsive" src="assets/images/portfolio-4.png" alt="">
-              <div class="portfolio__single-section__overlay">
-                <div class="overlay-content">
-                  <h4>PHOTOGRAPHY</h4>
-                  <p>photographer</p>
-                </div>
-                <div class="portfolio__single-section__search-icon">
-                  <a href="#"><img src="assets/images/search-icon.png" alt=""></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="portfolio__single-section mix category-b category-d" data-order="5">
-              <img class="portfolio__single-section__image img-responsive" src="assets/images/portfolio-5.png" alt="">
-              <div class="portfolio__single-section__overlay">
-                <div class="overlay-content">
-                  <h4>WEBSITE DESIGN</h4>
-                  <p>Designer</p>
-                </div>
-                <div class="portfolio__single-section__search-icon">
-                  <a href="#"><img src="assets/images/search-icon.png" alt=""></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="portfolio__single-section mix category-d" data-order="6">
-              <img class="portfolio__single-section__image img-responsive" src="assets/images/portfolio-6.png" alt="">
-              <div class="portfolio__single-section__overlay">
-                <div class="overlay-content">
-                  <h4>LOGO DESIGN</h4>
-                  <p>Designer</p>
-                </div>
-                <div class="portfolio__single-section__search-icon">
-                  <a href="#"><img src="assets/images/search-icon.png" alt=""></a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-        -->
-    </div>
-  </section>
-
-
-  <footer class="footer footer--bg">
-    <div class="container text-center">
-      <h1 class="footer__title">PLUGADOS DEV</h1>
-      <ul class="footer__contact-information">
-        <li><a href="tel:5555555555"><i class="material-icons">phone</i> Hotline (+55) 64 99947-8851</a></li>
-        <li><a href="garciadavid.ti@gmail.com"><i class="material-icons">email</i> garciadavid.ti@gmail.com</a></li>
-        <li><a href="https://www.google.com/maps/place/16%C2%B049'22.1%22S+49%C2%B015'07.9%22W/@-16.8227911,-49.2540185,17z/data=!3m1!4b1!4m4!3m3!8m2!3d-16.8227947!4d-49.2521978?entry=ttu"><i class="material-icons">location_on</i> Aparecida de Goiania </a></li>
-      </ul>
-    </div>
-    <hr style="border: 0;border-top: 1px solid #525B60;display:block;margin-top: 40px;">
-    <div class="container text-center">
-      <div class="social-icon pull-right">
-        <ul>
-          <li><a href="https://www.linkedin.com/in/david-garcia-931196a7/"><i><img class="social-icon icons" src="assets/images/linkedin.png"alt=""></i></a></li>
-          <li><a href="https://github.com/DavidGarcia13"><i><img class="social-icon icons" src="assets/images/github.png"alt=""></i></a></li>
-          <li><a href="http://lattes.cnpq.br/5984559438351379"><i><img class="social-icon icons" src="assets/images/lates.png"alt=""></i></a></li>
+      <div class="container shell social-shell">
+        <ul class="social-list">
+          <li><a href="https://www.linkedin.com/in/david-garcia-931196a7/" target="_blank" rel="noopener noreferrer"><img class="icons" src="assets/images/linkedin.png" alt="LinkedIn de David Garcia"></a></li>
+          <li><a href="https://github.com/DavidGarcia13" target="_blank" rel="noopener noreferrer"><img class="icons" src="assets/images/github.png" alt="GitHub de David Garcia"></a></li>
+          <li><a href="http://lattes.cnpq.br/5984559438351379" target="_blank" rel="noopener noreferrer"><img class="icons" src="assets/images/lates.png" alt="Currículo Lattes de David Garcia"></a></li>
         </ul>
       </div>
-      <p class="footer__paragraph">Copyright &copy; 2024 , All Rights Reserved.</p>
+    </section>
+
+    <section class="section" id="about">
+      <div class="container shell">
+        <div class="section-heading">
+          <h2 class="section-title">SOBRE MIM</h2>
+          <img class="section-title__style" src="assets/images/title-style.png" alt="">
+          <p class="section-subtitle">De agricultor no interior a Analista Sênior ERP Protheus e Analista de Dados. Dedicação é o que define evolução.</p>
+        </div>
+        <div class="about-layout">
+          <div class="about-photo">
+            <img src="assets/images/about-me-image.jpg" alt="Retrato de David Garcia">
+          </div>
+          <div class="about-content">
+            <div class="about-story">
+              <p>Sou um profissional de TI com graduação em Análise e Desenvolvimento de Sistemas pelo IF Goiano, além de pós-graduação em Sistemas de Informação pela FAVENI e pós-graduação em Banco de Dados com Big Data pela UFG.</p>
+              <p>Atualmente estou cursando IA Aplicada no IFG.</p>
+              <p>Além da minha trajetória acadêmica, gosto de audiobooks, artesanato e tenho uma grande paixão por computação.</p>
+              <p>Também sou muito fã de Naruto, Harry Potter e Game of Thrones.</p>
+            </div>
+            <div class="about-bio-grid">
+              <p class="about__bio"><strong>NOME :</strong> David R. Garcia</p>
+              <p class="about__bio"><strong>IDADE :</strong> 29</p>
+              <p class="about__bio"><strong>CARGO :</strong> Desenvolvedor ADVPL</p>
+              <p class="about__bio"><strong>LOCALIZAÇÃO :</strong> Goiânia-GO, Brasil</p>
+            </div>
+            <div class="hero-actions">
+              <a class="button button--colorful" href="workspace/">Ver Projetos</a>
+              <a class="button button--ghost" href="Curriculo/CurriculoDG.pdf" target="_blank" rel="noopener noreferrer">Baixar CV</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--soft" id="skills">
+      <div class="container shell">
+        <div class="section-heading">
+          <h2 class="section-title">SKILLS, SOFT SKILLS E TECNOLOGIAS</h2>
+          <img class="section-title__style" src="assets/images/title-style.png" alt="">
+          <p class="section-subtitle">Competências técnicas, habilidades interpessoais e tecnologias utilizadas no meu dia a dia de desenvolvimento e automação.</p>
+        </div>
+        <div class="skill-overview-grid">
+          <article class="skill-panel">
+            <h3>Skills</h3>
+            <ul class="skill-list">
+              <li>Lógica de programação</li>
+              <li>Advpl</li>
+              <li>Tlpp</li>
+              <li>Html</li>
+              <li>Css</li>
+              <li>Javascript</li>
+              <li>Pl/sql</li>
+              <li>Sql</li>
+              <li>Oracle</li>
+              <li>Sql server</li>
+              <li>Soap</li>
+              <li>Git, github e gitlab</li>
+              <li>Powershell</li>
+              <li>Erp Protheus</li>
+              <li>Apis rest</li>
+              <li>Webhooks</li>
+              <li>Jenkins</li>
+              <li>Desenvolvimento com ia</li>
+            </ul>
+          </article>
+          <article class="skill-panel">
+            <h3>Soft Skills</h3>
+            <ul class="skill-list">
+              <li>Comunicação verbal e gestual</li>
+              <li>Colaboração</li>
+              <li>Flexibilidade</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section experience-section" id="experience">
+      <div class="container shell">
+        <div class="experience-heading">
+          <h2 class="experience-heading__title">Experiência Profissional</h2>
+          <p class="experience-heading__subtitle">Minha jornada profissional</p>
+        </div>
+        <div class="experience-timeline">
+          <article class="experience-item">
+            <div class="experience-card">
+              <div class="experience-card__top">
+                <div>
+                  <div class="experience-company-mark">SESI</div>
+                  <h3>Analista de Sistemas de Informação (Protheus) - Analista IV</h3>
+                </div>
+                <span class="experience-badge">Atual</span>
+              </div>
+              <p class="experience-card__meta">Sesi Goiás · Tempo integral</p>
+              <p class="experience-card__meta">fev de 2023 - o momento · 3 anos 2 meses</p>
+              <p class="experience-card__meta">Goiânia, Goiás, Brasil</p>
+              <p class="experience-card__text"><strong>Analista de Negócio e Desenvolvedor ADVPL.</strong> Desenvolvimento de novas funcionalidades e pontos de entrada, desenvolvimento de APIs, análise de requisitos, testes, acompanhamento de projetos e desenvolvimento de acordo com as atividades apontadas na ferramenta Redmine, acompanhamento da execução de projetos e atendimentos de O.S. através da ferramenta Trello, implantação, treinamentos, análise da infraestrutura Totvs com foco em performance e testes de desempenho, além de atualizações.</p>
+              <ul class="experience-tags">
+                <li>Advpl</li>
+                <li>Apis</li>
+                <li>Redmine</li>
+                <li>Trello</li>
+                <li>Implantação</li>
+                <li>Infraestrutura Totvs</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="experience-item">
+            <div class="experience-card">
+              <div class="experience-card__top">
+                <div>
+                  <div class="experience-company-mark">TOTVS</div>
+                  <h3>Analista de negócios</h3>
+                </div>
+              </div>
+              <p class="experience-card__meta">TOTVS · Tempo integral</p>
+              <p class="experience-card__meta">jan de 2021 - fev de 2023 · 2 anos 2 meses</p>
+              <p class="experience-card__meta">Goiânia, Goiás, Brasil</p>
+              <p class="experience-card__text"><strong>Analista de Negócio e Desenvolvedor ADVPL.</strong> Desenvolvimento de novas funcionalidades e pontos de entrada de acordo com a regra de negócio específica de cada cliente, análise de requisitos, testes, TIR, testes automatizados, atendimento de tickets através do help desk Movidesk, implantação, treinamentos, análise da infraestrutura Totvs com foco em performance e testes de desempenho, atualizações e manutenção de portais.</p>
+              <ul class="experience-tags">
+                <li>Advpl</li>
+                <li>Movidesk</li>
+                <li>Testes automatizados</li>
+                <li>Implantação</li>
+                <li>Portais</li>
+                <li>Performance</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="experience-item">
+            <div class="experience-card">
+              <div class="experience-card__top">
+                <div>
+                  <div class="experience-company-mark">Friato</div>
+                  <h3>Analista de Sistemas</h3>
+                </div>
+              </div>
+              <p class="experience-card__meta">Friato Alimentos</p>
+              <p class="experience-card__meta">jan de 2018 - dez de 2020 · 3 anos</p>
+              <p class="experience-card__meta">Pires do Rio</p>
+              <p class="experience-card__text"><strong>Analista de Infraestrutura.</strong> Rede, manutenção de hardware, criação de usuários, criação de planilhas eletrônicas e Access.</p>
+              <p class="experience-card__text"><strong>Analista Protheus (ERP Totvs).</strong> Atendimento de tickets através do help desk GLPI, análise de processos, treinamentos e capacitação, implantação de novos módulos, criação de relatórios e desenvolvimento de novas funcionalidades através de pontos de entrada.</p>
+              <p class="experience-card__text"><strong>Gerenciamento de contas e compras do setor de TI.</strong> Gestão de contratos e cotação/compras de novos equipamentos e sistemas.</p>
+              <p class="experience-card__text"><strong>Outras atuações.</strong> Analista de faturamento, analista de almoxarifado e analista de processos/sistema de posto de gasolina.</p>
+              <ul class="experience-tags">
+                <li>Infraestrutura</li>
+                <li>Glpi</li>
+                <li>Erp Totvs</li>
+                <li>Relatórios</li>
+                <li>Implantação</li>
+                <li>Gestão de contratos</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="projects">
+      <div class="container shell">
+        <div class="section-heading">
+          <h2 class="section-title">PROJETOS</h2>
+          <img class="section-title__style" src="assets/images/title-style.png" alt="">
+          <p class="section-subtitle">Uma visão resumida de projetos reais com foco em integração, automação e melhoria operacional.</p>
+        </div>
+        <div class="project-summary-grid">
+          <article class="project-summary-card">
+            <h3>Aprovação e Pagamentos Online para Fornecedores e Folha de Pagamento</h3>
+            <p>Integração entre Protheus ERP e Totalbank para automatizar pagamentos, aprovações e monitoramento.</p>
+            <a class="button button--outline" href="workspace/">Ver detalhes</a>
+          </article>
+          <article class="project-summary-card">
+            <h3>Estrutura de CI/CD para Deploy Automático no Protheus</h3>
+            <p>Pipeline com Jenkins, GitLab/GitHub e PowerShell para reduzir falhas e acelerar publicações.</p>
+            <a class="button button--outline" href="workspace/">Ver detalhes</a>
+          </article>
+          <article class="project-summary-card">
+            <h3>Acompanhamento de Classificação de Notas Fiscais</h3>
+            <p>Integração entre Protheus e Arquivei com captura automática e monitoramento contínuo.</p>
+            <a class="button button--outline" href="workspace/">Ver detalhes</a>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container shell footer-grid">
+      <div>
+        <h2 class="footer__title">PLUGADOS DEV</h2>
+        <p class="footer-copy">Portfólio pessoal de David Garcia com foco em ERP Protheus, integrações e automação de processos.</p>
+      </div>
+      <div class="footer-links">
+        <a href="tel:+5564999478851">(+55) 64 99947-8851</a>
+        <a href="mailto:garciadavid.ti@gmail.com">garciadavid.ti@gmail.com</a>
+        <a href="workspace/">Workspace</a>
+      </div>
     </div>
   </footer>
-</div>
-  <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-  <script src="js/mixitup.js"></script>
 
   <script>
-    $('a').click(function(e)
-      {
-        e.preventDefault();
-      });
+    (function () {
+      var navToggle = document.querySelector('.nav-toggle');
+      var nav = document.querySelector('.site-nav');
 
-    // calling mixitup
-    var mixer = mixitup(".portfolio");
+      if (navToggle && nav) {
+        navToggle.addEventListener('click', function () {
+          var isOpen = nav.classList.toggle('is-open');
+          navToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+        });
+      }
+
+      document.querySelectorAll('a[href^="#"]').forEach(function (anchor) {
+        anchor.addEventListener('click', function (event) {
+          var target = document.querySelector(anchor.getAttribute('href'));
+          if (!target) {
+            return;
+          }
+          event.preventDefault();
+          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          if (nav) {
+            nav.classList.remove('is-open');
+            navToggle.setAttribute('aria-expanded', 'false');
+          }
+        });
+      });
+    }());
   </script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
-</html>  
+</html>

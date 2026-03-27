@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Workspace | David Garcia</title>
+  <meta name="description" content="Workspace com projetos reais de David Garcia em Protheus, integrações, CI/CD e automação corporativa.">
+  <meta name="keywords" content="workspace, David Garcia, Protheus, ADVPL, CI/CD, automação, integração">
+  <link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../assets/iconfont/material-icons.css">
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container shell nav-shell">
+      <a class="brand" href="../index.html">PLUGADOS DEV</a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Abrir navegação">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="site-nav" id="site-nav">
+        <a href="../index.html#about">Sobre</a>
+        <a href="../index.html#skills">Skills</a>
+        <a href="../index.html#experience">Experiência</a>
+        <a href="../index.html#projects">Projetos</a>
+        <a href="index.html">Workspace</a>
+        <a class="nav-cta" href="https://wa.me/5564999478851?text=Ol%C3%A1,%20tudo%20bem%3F" target="_blank" rel="noopener noreferrer">Fale comigo</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="inner-hero">
+      <div class="container shell">
+        <div class="inner-hero__panel">
+          <p class="inner-hero__eyebrow">Workspace</p>
+          <h1>Projetos reais apresentados de forma mais clara e profissional</h1>
+          <p>Uma coleção de projetos com foco em integração, automação, monitoramento e entrega contínua em ambientes corporativos.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="workspace-layout">
+      <div class="container shell">
+        <div class="project-list">
+          <article class="project-card">
+            <div class="project-card__image">
+              <img src="../assets/images/projeto-1.jpg" alt="Projeto de aprovação e pagamentos online para fornecedores e folha de pagamento">
+            </div>
+            <div class="project-card__content">
+              <p class="project-card__eyebrow">Projeto 1</p>
+              <h2>Aprovação e Pagamentos Online para Fornecedores e Folha de Pagamento</h2>
+              <p>Implementação de integração entre o ERP TOTVS Protheus ERP e a plataforma Totalbank, automatizando envio de pagamentos, aprovação no ERP, recebimento de webhooks e monitoramento via painel.</p>
+              <ul class="tag-list">
+                <li>Integração via API</li>
+                <li>Webhooks</li>
+                <li>Automação de pagamentos</li>
+                <li>Monitoramento</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-card__image">
+              <img src="../assets/images/fluxo-devops.jpg" alt="Fluxo de CI/CD e deploy automático no Protheus com Git, GitLab e Jenkins">
+            </div>
+            <div class="project-card__content">
+              <p class="project-card__eyebrow">Projeto 2</p>
+              <h2>Estrutura de CI/CD para Deploy Automático no Protheus</h2>
+              <p>Arquitetura de CI/CD utilizando Jenkins, GitLab/GitHub e scripts PowerShell, permitindo deploy automatizado com suporte a troca quente.</p>
+              <ul class="tag-list">
+                <li>Pipeline automatizada</li>
+                <li>Versionamento</li>
+                <li>Redução de erros humanos</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-card__image">
+              <img src="../assets/images/projeto-3.jpg" alt="Projeto de acompanhamento de classificação de notas fiscais">
+            </div>
+            <div class="project-card__content">
+              <p class="project-card__eyebrow">Projeto 3</p>
+              <h2>Acompanhamento de Classificação de Notas Fiscais</h2>
+              <p>Integração entre Protheus e Arquivei para captura automática de notas fiscais, verificação de classificação e monitoramento contínuo.</p>
+              <ul class="tag-list">
+                <li>Monitoramento fiscal</li>
+                <li>Automação</li>
+                <li>Controle de prazos</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container shell footer-grid">
+      <div>
+        <h2 class="footer__title">PLUGADOS DEV</h2>
+        <p class="footer-copy">Workspace com projetos que reforçam a atuação técnica de David Garcia em Protheus, integrações e automação.</p>
+      </div>
+      <div class="footer-links">
+        <a href="tel:+5564999478851">(+55) 64 99947-8851</a>
+        <a href="mailto:garciadavid.ti@gmail.com">garciadavid.ti@gmail.com</a>
+        <a href="../index.html">Início</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      var navToggle = document.querySelector('.nav-toggle');
+      var nav = document.querySelector('.site-nav');
+
+      if (navToggle && nav) {
+        navToggle.addEventListener('click', function () {
+          var isOpen = nav.classList.toggle('is-open');
+          navToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+        });
+      }
+    }());
+  </script>
+</body>
+</html>
